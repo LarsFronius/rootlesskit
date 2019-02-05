@@ -92,7 +92,7 @@ func Parent(pipeFDEnvKey string, opt *Opt) error {
 	cmd.ExtraFiles = []*os.File{pipeR}
 	cmd.Env = append(os.Environ(), pipeFDEnvKey+"=3")
 	if err := cmd.Start(); err != nil {
-		return errors.Wrap(err, "failed to start the child")
+		return errors.Wrapf(err, "failed to start the child for %+v \n", cmd)
 	}
 	childPIDPath := filepath.Join(opt.StateDir, StateFileChildPID)
 	if err := ioutil.WriteFile(childPIDPath, []byte(strconv.Itoa(cmd.Process.Pid)), 0444); err != nil {
