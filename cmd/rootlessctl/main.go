@@ -8,8 +8,8 @@ import (
 	"github.com/sirupsen/logrus"
 	"github.com/urfave/cli"
 
-	"github.com/rootless-containers/rootlesskit/pkg/api/client"
-	"github.com/rootless-containers/rootlesskit/pkg/version"
+	"github.com/LarsFronius/rootlesskit/pkg/api/client"
+	"github.com/LarsFronius/rootlesskit/pkg/version"
 )
 
 func main() {

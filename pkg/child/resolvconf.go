@@ -7,7 +7,7 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/rootless-containers/rootlesskit/pkg/common"
+	"github.com/LarsFronius/rootlesskit/pkg/common"
 )
 
 func generateResolvConf(dns string) []byte {

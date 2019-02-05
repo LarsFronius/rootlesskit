@@ -16,8 +16,8 @@ import (
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
 
-	"github.com/rootless-containers/rootlesskit/pkg/common"
-	"github.com/rootless-containers/rootlesskit/pkg/network"
+	"github.com/LarsFronius/rootlesskit/pkg/common"
+	"github.com/LarsFronius/rootlesskit/pkg/network"
 )
 
 func NewParentDriver(binary string, mtu int, disableHostLoopback bool) network.ParentDriver {
@@ -31,7 +31,7 @@ func NewParentDriver(binary string, mtu int, disableHostLoopback bool) network.P
 		mtu = 1500
 	}
 	if mtu != 1500 {
-		logrus.Warnf("vpnkit is known to have issues with non-1500 MTU (current: %d), see https://github.com/rootless-containers/rootlesskit/issues/6#issuecomment-403531453", mtu)
+		logrus.Warnf("vpnkit is known to have issues with non-1500 MTU (current: %d), see https://github.com/LarsFronius/rootlesskit/issues/6#issuecomment-403531453", mtu)
 		// NOTE: iperf3 stops working with MTU >= 16425
 	}
 	return &parentDriver{

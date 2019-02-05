@@ -12,9 +12,9 @@ import (
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
 
-	"github.com/rootless-containers/rootlesskit/pkg/common"
-	"github.com/rootless-containers/rootlesskit/pkg/copyup"
-	"github.com/rootless-containers/rootlesskit/pkg/network"
+	"github.com/LarsFronius/rootlesskit/pkg/common"
+	"github.com/LarsFronius/rootlesskit/pkg/copyup"
+	"github.com/LarsFronius/rootlesskit/pkg/network"
 )
 
 func waitForParentSync(pipeFDStr string) (*common.Message, error) {
@@ -88,7 +88,7 @@ func mountSysfs() error {
 	if err := common.Execs(os.Stderr, os.Environ(), cmds); err != nil {
 		// when the sysfs in the parent namespace is RO,
 		// we can't mount RW sysfs even in the child namespace.
-		// https://github.com/rootless-containers/rootlesskit/pull/23#issuecomment-429292632
+		// https://github.com/LarsFronius/rootlesskit/pull/23#issuecomment-429292632
 		// https://github.com/torvalds/linux/blob/9f203e2f2f065cd74553e6474f0ae3675f39fb0f/fs/namespace.c#L3326-L3328
 		cmdsRo := [][]string{{"mount", "-t", "sysfs", "-o", "ro", "none", "/sys"}}
 		logrus.Warnf("failed to mount sysfs (%v), falling back to read-only mount (%v): %v",

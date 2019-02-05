@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/rootless-containers/rootlesskit/pkg/port"
+	"github.com/LarsFronius/rootlesskit/pkg/port"
 )
 
 func TestParsePortSpec(t *testing.T) {

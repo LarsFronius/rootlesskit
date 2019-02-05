@@ -3,8 +3,8 @@ package socat
 import (
 	"testing"
 
-	"github.com/rootless-containers/rootlesskit/pkg/port"
-	"github.com/rootless-containers/rootlesskit/pkg/port/testsuite"
+	"github.com/LarsFronius/rootlesskit/pkg/port"
+	"github.com/LarsFronius/rootlesskit/pkg/port/testsuite"
 )
 
 func TestSocat(t *testing.T) {

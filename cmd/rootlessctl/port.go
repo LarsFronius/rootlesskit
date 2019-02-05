@@ -11,8 +11,8 @@ import (
 	"github.com/pkg/errors"
 	"github.com/urfave/cli"
 
-	"github.com/rootless-containers/rootlesskit/pkg/port"
-	"github.com/rootless-containers/rootlesskit/pkg/port/portutil"
+	"github.com/LarsFronius/rootlesskit/pkg/port"
+	"github.com/LarsFronius/rootlesskit/pkg/port/portutil"
 )
 
 var listPortsCommand = cli.Command{

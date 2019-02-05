@@ -5,7 +5,7 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/rootless-containers/rootlesskit/pkg/common"
+	"github.com/LarsFronius/rootlesskit/pkg/common"
 )
 
 func PrepareTap(pid int, tap string) error {

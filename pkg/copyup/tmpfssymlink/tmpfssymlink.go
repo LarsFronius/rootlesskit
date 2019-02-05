@@ -7,8 +7,8 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/rootless-containers/rootlesskit/pkg/common"
-	"github.com/rootless-containers/rootlesskit/pkg/copyup"
+	"github.com/LarsFronius/rootlesskit/pkg/common"
+	"github.com/LarsFronius/rootlesskit/pkg/copyup"
 )
 
 func NewChildDriver() copyup.ChildDriver {

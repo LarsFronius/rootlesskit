@@ -10,10 +10,10 @@ import (
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
 
-	"github.com/rootless-containers/rootlesskit/pkg/common"
-	"github.com/rootless-containers/rootlesskit/pkg/network"
-	"github.com/rootless-containers/rootlesskit/pkg/network/iputils"
-	"github.com/rootless-containers/rootlesskit/pkg/network/parentutils"
+	"github.com/LarsFronius/rootlesskit/pkg/common"
+	"github.com/LarsFronius/rootlesskit/pkg/network"
+	"github.com/LarsFronius/rootlesskit/pkg/network/iputils"
+	"github.com/LarsFronius/rootlesskit/pkg/network/parentutils"
 )
 
 // NewParentDriver instantiates new parent driver.

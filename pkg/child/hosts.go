@@ -8,7 +8,7 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/rootless-containers/rootlesskit/pkg/common"
+	"github.com/LarsFronius/rootlesskit/pkg/common"
 )
 
 // generateEtcHosts makes sure the current hostname is resolved into

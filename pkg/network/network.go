@@ -1,7 +1,7 @@
 package network
 
 import (
-	"github.com/rootless-containers/rootlesskit/pkg/common"
+	"github.com/LarsFronius/rootlesskit/pkg/common"
 )
 
 // ParentDriver is called from the parent namespace
